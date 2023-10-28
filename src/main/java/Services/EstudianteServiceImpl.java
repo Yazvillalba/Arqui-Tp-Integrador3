@@ -1,7 +1,12 @@
 package Services;
 
-import Interfaces.EstudianteService;
+import Repositories.EstudianteRepository;
+import Services.Interfaces.Estudiante;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-public class EstudianteServiceImpl implements EstudianteService {
-    
+@Service
+public class EstudianteServiceImpl implements Estudiante {
+    @Autowired
+    EstudianteRepository er;
 }
