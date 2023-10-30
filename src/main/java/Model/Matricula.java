@@ -22,4 +22,13 @@ public class Matricula {
     private int anioInscripcion;
     private int graduacion;
     private int antiguedad;
+
+    public Matricula( Estudiante estudiante, Carrera carrera, int anioInscripcion, int graduacion, int antiguedad) {
+
+        this.estudiante = estudiante;
+        this.carrera = carrera;
+        this.anioInscripcion = anioInscripcion;
+        this.graduacion = graduacion;
+        this.antiguedad = antiguedad;
+    }
 }

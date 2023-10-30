@@ -1,13 +1,34 @@
 package com.arqintegrador3.integrador3;
 
+import jakarta.annotation.PostConstruct;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import utils.CSVLoader;
 
-@SpringBootApplication
+
+
+@Configuration
+@EnableAutoConfiguration
+@ComponentScan
 public class Integrador3Application {
 
+
+    @Autowired
+    private CSVLoader load;
     public static void main(String[] args) {
         SpringApplication.run(Integrador3Application.class, args);
+    }
+
+    @PostConstruct
+    public void init() throws Exception{
+        CSVLoader loader = new CSVLoader();
+        loader.loadEstudiantes("estudiantes.csv");
+        loader.loadCarrera("carreras.csv");
+        loader.loadEstudianteCarrera("estudianteCarrera.csv");
     }
 
 }
