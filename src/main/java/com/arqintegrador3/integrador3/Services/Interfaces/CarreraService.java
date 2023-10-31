@@ -1,7 +1,7 @@
-package Services.Interfaces;
+package com.arqintegrador3.integrador3.Services.Interfaces;
 
-import DTO.CarreraDTO;
-import Model.Carrera;
+import com.arqintegrador3.integrador3.DTO.CarreraDTO;
+import com.arqintegrador3.integrador3.Model.Carrera;
 
 
 import java.util.List;
@@ -9,7 +9,7 @@ import java.util.List;
 public interface CarreraService {
     void addCarrera(Carrera carrera);
 
-    CarreraDTO findCarreraById(int idCarrera);
+    Carrera findCarreraById(int idCarrera);
 
     List<CarreraDTO> findAllCarreras();
 

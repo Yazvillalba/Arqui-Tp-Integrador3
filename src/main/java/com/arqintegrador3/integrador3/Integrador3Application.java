@@ -7,13 +7,11 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import utils.CSVLoader;
 
 
 
-@Configuration
-@EnableAutoConfiguration
-@ComponentScan
+@SpringBootApplication
+
 public class Integrador3Application {
 
 
@@ -25,10 +23,12 @@ public class Integrador3Application {
 
     @PostConstruct
     public void init() throws Exception{
-        CSVLoader loader = new CSVLoader();
-        loader.loadEstudiantes("estudiantes.csv");
-        loader.loadCarrera("carreras.csv");
-        loader.loadEstudianteCarrera("estudianteCarrera.csv");
+
+
+        load.loadEstudiantes("C:\\Users\\yaz\\Desktop\\Arqui-Tp-Integrador3\\src\\main\\java\\com\\arqintegrador3\\integrador3\\Resources\\estudiantes.csv");
+        load.loadCarrera("C:\\Users\\yaz\\Desktop\\Arqui-Tp-Integrador3\\src\\main\\java\\com\\arqintegrador3\\integrador3\\Resources\\carreras.csv");
+        load.loadEstudianteCarrera("C:\\Users\\yaz\\Desktop\\Arqui-Tp-Integrador3\\src\\main\\java\\com\\arqintegrador3\\integrador3\\Resources\\estudianteCarrera.csv");
+
     }
 
 }

@@ -1,17 +1,16 @@
-package utils;
+package com.arqintegrador3.integrador3;
 
-import Model.Carrera;
-import Model.Estudiante;
-import Model.Matricula;
-import Repositories.CarreraRepository;
-import Repositories.EstudianteRepository;
-import Repositories.MatriculaRepository;
+import com.arqintegrador3.integrador3.Model.Carrera;
+import com.arqintegrador3.integrador3.Model.Estudiante;
+import com.arqintegrador3.integrador3.Model.Matricula;
 
+import com.arqintegrador3.integrador3.Repositories.CarreraRepository;
+import com.arqintegrador3.integrador3.Repositories.EstudianteRepository;
+import com.arqintegrador3.integrador3.Repositories.MatriculaRepository;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
 import java.io.FileReader;
@@ -43,7 +42,7 @@ public class CSVLoader {
     }
 
     public void loadEstudiantes(String filePath) throws IOException {
-        CSVParser parser = this.getParser("src\\main\\java\\Resources\\estudiantes.csv");
+        CSVParser parser = this.getParser("C:\\Users\\yaz\\Desktop\\Arqui-Tp-Integrador3\\src\\main\\java\\com\\arqintegrador3\\integrador3\\Resources\\estudiantes.csv");
 
         try {
             for (CSVRecord row : parser) {
@@ -63,7 +62,7 @@ public class CSVLoader {
     }
 
     public void loadCarrera(String filePath) throws IOException {
-        CSVParser parser = this.getParser("src\\main\\java\\Resources\\carreras.csv");
+        CSVParser parser = this.getParser("C:\\Users\\yaz\\Desktop\\Arqui-Tp-Integrador3\\src\\main\\java\\com\\arqintegrador3\\integrador3\\Resources\\carreras.csv");
         try {
             for (CSVRecord row : parser) {
                 Carrera carrera = new Carrera(row.get("carrera"), Integer.parseInt(row.get("duracion")));
@@ -75,7 +74,7 @@ public class CSVLoader {
     }
 
     public void loadEstudianteCarrera(String filePath) throws IOException {
-        CSVParser parser = this.getParser("src\\main\\java\\Resources\\estudianteCarrera.csv");
+        CSVParser parser = this.getParser("C:\\Users\\yaz\\Desktop\\Arqui-Tp-Integrador3\\src\\main\\java\\com\\arqintegrador3\\integrador3\\Resources\\estudianteCarrera.csv");
         try {
             for (CSVRecord row : parser) {
                 int idEstudiante = Integer.parseInt(row.get("id_estudiante"));

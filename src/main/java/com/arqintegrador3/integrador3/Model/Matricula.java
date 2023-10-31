@@ -1,4 +1,4 @@
-package Model;
+package com.arqintegrador3.integrador3.Model;
 
 
 import jakarta.persistence.*;
@@ -31,4 +31,5 @@ public class Matricula {
         this.graduacion = graduacion;
         this.antiguedad = antiguedad;
     }
+    public Matricula(){}
 }

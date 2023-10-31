@@ -1,4 +1,4 @@
-package Model;
+package com.arqintegrador3.integrador3.Model;
 
 
 import jakarta.persistence.Column;

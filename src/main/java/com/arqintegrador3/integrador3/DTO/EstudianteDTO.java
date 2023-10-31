@@ -1,4 +1,4 @@
-package DTO;
+package com.arqintegrador3.integrador3.DTO;
 
 import lombok.Getter;
 import lombok.Setter;
