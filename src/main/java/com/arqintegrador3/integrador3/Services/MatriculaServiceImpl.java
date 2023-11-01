@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 
 @Service
-public class MatriculaServiceImpl implements MatriculaService {
+public class  MatriculaServiceImpl implements MatriculaService {
     @Autowired
     MatriculaRepository mr;
 }

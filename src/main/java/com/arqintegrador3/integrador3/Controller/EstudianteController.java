@@ -41,7 +41,6 @@ public class EstudianteController {
         return estudianteService.findEstudianteByGenero(genero);
     }
 
-
     @GetMapping("/carreraycuidad/{nombre}/{ciudad}")
     public List<EstudianteDTO> getEstudiantesByCarreraAndCiudad(@PathVariable String nombre, @PathVariable String ciudad){
         return estudianteService.findEstudiantesByCarreraAndCiudad(nombre,ciudad);

@@ -1,7 +1,9 @@
 package com.arqintegrador3.integrador3.Controller;
 
 
+import com.arqintegrador3.integrador3.DTO.CarreraConInscriptosDTO;
 import com.arqintegrador3.integrador3.DTO.CarreraDTO;
+import com.arqintegrador3.integrador3.DTO.ReporteDTO;
 import com.arqintegrador3.integrador3.Model.Carrera;
 import com.arqintegrador3.integrador3.Services.Interfaces.CarreraService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,5 +35,15 @@ public class CarreraController {
     @DeleteMapping("/eliminar/{id}")
     public void eliminarCarrera(@PathVariable int id){
         carreraService.deleteCarrera(id);
+    }
+
+    @GetMapping("/porcantInscriptos")
+    public List<CarreraConInscriptosDTO> obtenerPorCantInscriptos() {
+       return carreraService.obtenerPorCantInscriptos();
+    }
+
+    @GetMapping("/reporteCarrera")
+    public List<ReporteDTO> generarReporteCarreras() {
+        return carreraService.generarReporteCarreras();
     }
 }
