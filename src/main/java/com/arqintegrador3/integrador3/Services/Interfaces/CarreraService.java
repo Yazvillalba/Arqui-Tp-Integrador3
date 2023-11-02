@@ -19,5 +19,5 @@ public interface CarreraService {
 
     void deleteCarrera(int idCarrera);
 
-    List<ReporteDTO> generarReporteCarreras();
+  //  List<ReporteDTO> generarReporteCarreras();
 }

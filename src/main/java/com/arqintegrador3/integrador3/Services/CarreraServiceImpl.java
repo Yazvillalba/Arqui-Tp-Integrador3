@@ -41,9 +41,9 @@ public class CarreraServiceImpl implements CarreraService {
         cr.deleteById(idCarrera);
     }
 
-    @Override
-    public List<ReporteDTO> generarReporteCarreras() {
-        return cr.reporteCarreras();
-    }
+   // @Override
+    //public List<ReporteDTO> generarReporteCarreras() {
+      //  return cr.reporteCarreras();
+   // }
 
 }

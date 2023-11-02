@@ -42,8 +42,8 @@ public class CarreraController {
        return carreraService.obtenerPorCantInscriptos();
     }
 
-    @GetMapping("/reporteCarrera")
-    public List<ReporteDTO> generarReporteCarreras() {
-        return carreraService.generarReporteCarreras();
-    }
+   // @GetMapping("/reporteCarrera")
+   // public List<ReporteDTO> generarReporteCarreras() {
+     //   return carreraService.generarReporteCarreras();
+    //}
 }

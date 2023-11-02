@@ -8,8 +8,7 @@ import java.io.Serializable;
 
 @Getter
 @Setter
-public class CarreraConInscriptosDTO  extends DTO implements Serializable {
-
+public class CarreraConInscriptosDTO implements Serializable {
 
     private int id;
     private String nombre;
@@ -20,14 +19,7 @@ public class CarreraConInscriptosDTO  extends DTO implements Serializable {
         this.nroInscriptos = nroInscriptos;
     }
     @Override
-    public String getCabeceraTabla(){
-        return this.getNombreEspaciado("Nombre", 40)
-                + this.getNombreEspaciado("Número de Inscriptos", 10);
-    }
-
-    @Override
     public String toString() {
-        return this.getNombreEspaciado(nombre, 40)
-                + this.getNombreEspaciado(nroInscriptos.toString(),10);
+        return "Id: " + id + " nombre: " + nombre + " nroInscriptos: " + nroInscriptos;
     }
 }

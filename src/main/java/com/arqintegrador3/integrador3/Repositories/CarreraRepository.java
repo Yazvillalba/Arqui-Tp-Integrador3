@@ -17,13 +17,13 @@ public interface CarreraRepository extends JpaRepository<Carrera, Integer> {
     List<CarreraDTO> findAllCarreras();
 
 
-    @Query()
+
     CarreraDTO findCarreraByIdCarrera(int idCarrera);
 
 
     @Query(value = "SELECT NEW com.arqintegrador3.integrador3.DTO.CarreraConInscriptosDTO(c.idCarrera, c.nombre, COUNT(*)) FROM Carrera c JOIN c.estudiantes e GROUP BY c.nombre, c.idCarrera ORDER BY COUNT(*) DESC")
     List<CarreraConInscriptosDTO> findByCantInscriptos();
 
-    List<ReporteDTO> reporteCarreras();
+   // List<ReporteDTO> reporteCarreras();
 }
 
