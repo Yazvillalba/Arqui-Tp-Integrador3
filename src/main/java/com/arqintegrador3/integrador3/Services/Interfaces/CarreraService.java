@@ -11,7 +11,7 @@ import java.util.List;
 public interface CarreraService {
     void addCarrera(Carrera carrera);
 
-    Carrera findCarreraById(int idCarrera);
+    CarreraDTO findCarreraById(int idCarrera);
 
     List<CarreraDTO> findAllCarreras();
 

@@ -17,7 +17,7 @@ public interface EstudianteRepository extends JpaRepository<Estudiante, Integer>
     List<EstudianteDTO> findAllEstudiantes();
 
 
-    Estudiante findEstudianteByNroLibreta(@Param("nro_libreta") int nroLibreta);
+    EstudianteDTO findEstudianteByNroLibreta(@Param("nro_libreta") int nroLibreta);
 
 
     @Query(value = "SELECT NEW com.arqintegrador3.integrador3.DTO.EstudianteDTO(e.dni, e.nombre,e.apellido,e.edad,e.genero,e.ciudad,e.nroLibreta) FROM Estudiante e  WHERE e.genero = :genero" )

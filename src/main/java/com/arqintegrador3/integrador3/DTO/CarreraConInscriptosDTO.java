@@ -15,11 +15,12 @@ public class CarreraConInscriptosDTO implements Serializable {
     private Long nroInscriptos;
 
     public CarreraConInscriptosDTO(int id, String nombre, Long nroInscriptos) {
+        this.id = id;
         this.nombre = nombre;
         this.nroInscriptos = nroInscriptos;
     }
     @Override
     public String toString() {
-        return "Id: " + id + " nombre: " + nombre + " nroInscriptos: " + nroInscriptos;
+        return "id: " + id + " nombre: " + nombre + " nroInscriptos: " + nroInscriptos;
     }
 }

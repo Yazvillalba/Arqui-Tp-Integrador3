@@ -21,11 +21,9 @@ public class CarreraServiceImpl implements CarreraService {
         cr.save(carrera);
     }
 
-    @Override
-    public Carrera findCarreraById(int idCarrera) {
-        return cr.findById(idCarrera).get();
+    public CarreraDTO findCarreraById(int id){
+        return this.cr.findById(id).map(CarreraDTO::new).orElse(null);
     }
-
     @Override
     public List<CarreraDTO> findAllCarreras() {
         return cr.findAllCarreras();

@@ -1,6 +1,7 @@
 package com.arqintegrador3.integrador3.Services;
 
 
+import com.arqintegrador3.integrador3.DTO.CarreraDTO;
 import com.arqintegrador3.integrador3.DTO.EstudianteDTO;
 import com.arqintegrador3.integrador3.Model.Estudiante;
 import com.arqintegrador3.integrador3.Repositories.EstudianteRepository;
@@ -27,14 +28,14 @@ public class EstudianteServiceImpl implements EstudianteService {
     }
 
     @Override
-    public Estudiante findEstudianteByDni(int dni) {
-        return er.findById(dni).get();
+    public EstudianteDTO findEstudianteByDni(int dni) {
+        return this.er.findById(dni).map(EstudianteDTO::new).orElse(null);
 
     }
 
     @Override
-    public Estudiante findEstudianteByNroLibreta(int nroLibreta) {
-        return er.findEstudianteByNroLibreta(nroLibreta);
+    public EstudianteDTO findEstudianteByNroLibreta(int nroLibreta) {
+        return this.er.findEstudianteByNroLibreta(nroLibreta);
     }
 
     @Override

@@ -1,5 +1,6 @@
 package com.arqintegrador3.integrador3.DTO;
 
+import com.arqintegrador3.integrador3.Model.Carrera;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -19,6 +20,11 @@ public class CarreraDTO implements Serializable {
     }
 
     public CarreraDTO() {}
+
+    public CarreraDTO(Carrera carrera) {
+        this.nombre = carrera.getNombre();
+        this.duracion = carrera.getDuracion();
+    }
 
 
     @Override

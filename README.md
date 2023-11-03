@@ -50,15 +50,16 @@
 
 *CONSULTAS*
 
--[ ] Cuando se obtiene carrera por id muestra en postman "estudiantes": vacio
+-[x] Cuando se obtiene carrera por id muestra en postman "estudiantes": vacio
 -[ ] Probar el agregar carrera
 -[ ] Probar el eliminar carrera
--[ ] El por cantidad de inscriptos los id son todos 0
+-[x] El por cantidad de inscriptos los id son todos 0
 -[ ] AL REPORTE CARRERA LE FALTA LA QUERY CORRECTA
--[ ] Obtener estudiante por id muestra en el postman las carreras vacias
+-[x] Obtener estudiante por id muestra en el postman las carreras vacias
 -[ ] probar agregar estudiante
 -[ ] probar eliminar estudiante
 -[ ] estudiantes por nro de libreta muestra carreras vacias
 -[ ] NO ANDA BUSCAR ESTUDIANTE POR CARRERA Y CIUDAD 
 -[ ] FALTA MATRICULA CONTROLLER Y TODO DE MATRICULA
 -[ ] guardar las capturas en una carpeta de imagenes
+-[ ] estudiante por nro libreta no anda

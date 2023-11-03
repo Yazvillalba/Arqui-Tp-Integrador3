@@ -10,9 +10,9 @@ public interface EstudianteService {
 
     List<EstudianteDTO> findAllEstudiantes();
 
-    Estudiante findEstudianteByDni(int dni);
+    EstudianteDTO findEstudianteByDni(int dni);
 
-    Estudiante findEstudianteByNroLibreta(int nroLibreta);
+    EstudianteDTO findEstudianteByNroLibreta(int nroLibreta);
 
     List<EstudianteDTO> findEstudianteByGenero(String genero);
 

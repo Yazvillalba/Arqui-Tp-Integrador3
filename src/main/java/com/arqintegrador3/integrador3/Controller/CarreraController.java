@@ -25,7 +25,7 @@ public class CarreraController {
     }
 
     @GetMapping("/{id}")
-    public Carrera carreraPorId(@PathVariable int id){
+    public CarreraDTO carreraPorId(@PathVariable int id){
         return carreraService.findCarreraById(id);
     }
     @PostMapping("/agregar/{carrera}")

@@ -1,5 +1,7 @@
 package com.arqintegrador3.integrador3.DTO;
 
+import com.arqintegrador3.integrador3.Model.Carrera;
+import com.arqintegrador3.integrador3.Model.Estudiante;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -28,7 +30,15 @@ public class EstudianteDTO implements Serializable {
         this.ciudad = ciudad;
         this.nroLibreta = nroLibreta;
     }
-
+    public EstudianteDTO(Estudiante estudiante) {
+        this.dni = estudiante.getDni();
+        this.nombre = estudiante.getNombre();
+        this.apellido = estudiante.getApellido();
+        this.edad = estudiante.getEdad();
+        this.genero = estudiante.getGenero();
+        this.ciudad = estudiante.getCiudad();
+        this.nroLibreta = estudiante.getNroLibreta();
+    }
     @Override
     public String toString(){
         return "Dni: " + dni +  " nombre: " + nombre +  " apellido: " + apellido + " edad: " + edad + " genero: " + genero + " ciudad: " + ciudad + "nroLibreta: " + nroLibreta;

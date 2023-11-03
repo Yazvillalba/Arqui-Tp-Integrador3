@@ -27,12 +27,12 @@ public class EstudianteController {
         estudianteService.addEstudiante(estudiante);
     }
     @GetMapping("/{dni}")
-    public Estudiante getEstudiantesByDni(@PathVariable int dni){
+    public EstudianteDTO getEstudiantesByDni(@PathVariable int dni){
         return estudianteService.findEstudianteByDni(dni);
     }
 
     @GetMapping("/nroLibreta/{nroLibreta}")
-    public Estudiante getEstudiantesByNroLibreta(@PathVariable int nroLibreta){
+    public EstudianteDTO getEstudiantesByNroLibreta(@PathVariable int nroLibreta){
         return estudianteService.findEstudianteByNroLibreta(nroLibreta);
     }
 
