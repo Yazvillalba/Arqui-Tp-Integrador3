@@ -6,9 +6,13 @@ import com.arqintegrador3.integrador3.DTO.CarreraDTO;
 import com.arqintegrador3.integrador3.DTO.ReporteDTO;
 import com.arqintegrador3.integrador3.Repositories.CarreraRepository;
 import com.arqintegrador3.integrador3.Services.Interfaces.CarreraService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.arqintegrador3.integrador3.Model.Carrera;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -39,9 +43,17 @@ public class CarreraServiceImpl implements CarreraService {
         cr.deleteById(idCarrera);
     }
 
-   // @Override
-    //public List<ReporteDTO> generarReporteCarreras() {
-      //  return cr.reporteCarreras();
-   // }
 
+    @Override
+    @Transactional(readOnly = true)
+    public List<ReporteDTO> generarReporteCarreras() {
+        List<Object[]> results = cr.reporteCarreras();
+        List<ReporteDTO> reporte = new ArrayList<>();
+
+        for (Object[] r : results) {
+            reporte.add(new ReporteDTO((String) r[0], (Long) r[1], (Long) r[2], (Long) r[3]));
+        }
+
+        return reporte;
+    }
 }

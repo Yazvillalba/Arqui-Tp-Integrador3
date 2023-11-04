@@ -17,17 +17,22 @@
 ## Agregar Carrera
 ### "/carreras/agregar/carrera"
 
-*INSERTAR CAPTURA
+![img.png](imagenes/agregarCarrera.png)
 
 ## Eliminar Carrera
 ### "/carreras/delete/id"
 
-*INSERTAR CAPTURA
+![img_1.png](imagenes/eliminarCarrera.png)
 
 ## Obtener carreras por cantidad de inscriptos
 ### "/carreras/porcantInscriptos"
 
 ![img_4.png](imagenes/img_4.png)
+
+## Reporte de carreras
+### "/carreras/reporteCarrera"
+
+![img_2.png](imagenes/reporteCarrera.png)
 
 
 # ENDPOINTS ESTUDIANTE
@@ -37,10 +42,21 @@
 
 ![img_2.png](imagenes/img_2.png)
 
+
+## Agregar Estudiante
+### "/estudiantes/agregar/Estudiante"
+
+![img_4.png](imagenes/agregarEstudiante.png)
+
 ## Obtener estudiante por Id que seria el dni
 ### "/estudiantes/id"
 
 ![img_5.png](imagenes/img_5.png)
+
+
+## Obtener estudiante por nro de libreta
+## "estudiantes/nroLibreta/nroLibreta"
+![img_3.png](imagenes/EstudiantePornroLibreta.png)
 
 ## Obtener estudiantes por Genero
 ### "/estudiantes/genero/genero"
@@ -51,24 +67,17 @@
 ### "/estudiantes/carreraycuidad/TUDAI/Rauch"
 ![img_6.png](imagenes/img_6.png)
 
-## Agregar Estudiante
-### "/estudiantes/agregar/Estudiante"
 
 ## Elimiar Estudiante
 ### "/estudiantes/eliminar/id"
+![img_5.png](imagenes/eliminarEstudiante.png)
+
+
+
+# ENDPOINTS DE MATRICULA
+
 
 *CONSULTAS*
 
--[x] Cuando se obtiene carrera por id muestra en postman "estudiantes": vacio
--[ ] Probar el agregar carrera
--[ ] Probar el eliminar carrera
--[x] El por cantidad de inscriptos los id son todos 0
--[ ] AL REPORTE CARRERA LE FALTA LA QUERY CORRECTA
--[x] Obtener estudiante por id muestra en el postman las carreras vacias
--[ ] probar agregar estudiante
--[ ] probar eliminar estudiante
--[x] estudiantes por nro de libreta muestra carreras vacias
--[x] NO ANDA BUSCAR ESTUDIANTE POR CARRERA Y CIUDAD 
--[ ] FALTA MATRICULA CONTROLLER Y TODO DE MATRICULA
--[ ] Matricula all deberia tambien devolver el estudiante y la carrera
--[ ] Solucionar paths absolutos en el csv loader
+-[ ] FALTA CRUD MATRICULA 
+-[ ] ACOMODAR IMAGENES EN SU CARPETA
