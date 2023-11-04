@@ -9,14 +9,16 @@ import java.io.Serializable;
 @Getter
 @Setter
 public class CarreraDTO implements Serializable {
-
+    private int id;
     private String nombre;
     private int duracion;
 
 
-    public CarreraDTO(String nombre, int duracion) {
+    public CarreraDTO(int id, String nombre, int duracion) {
+        this.id = id;
         this.nombre = nombre;
         this.duracion = duracion;
+
     }
 
     public CarreraDTO() {}
@@ -24,6 +26,7 @@ public class CarreraDTO implements Serializable {
     public CarreraDTO(Carrera carrera) {
         this.nombre = carrera.getNombre();
         this.duracion = carrera.getDuracion();
+        this.id = carrera.getIdCarrera();
     }
 
 

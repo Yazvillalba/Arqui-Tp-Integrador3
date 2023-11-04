@@ -28,7 +28,7 @@ public class CarreraController {
     public CarreraDTO carreraPorId(@PathVariable int id){
         return carreraService.findCarreraById(id);
     }
-    @PostMapping("/agregar/{carrera}")
+    @PostMapping("/agregar")
     public void agregarCarrera(@RequestBody Carrera carrera){
         carreraService.addCarrera(carrera);
     }

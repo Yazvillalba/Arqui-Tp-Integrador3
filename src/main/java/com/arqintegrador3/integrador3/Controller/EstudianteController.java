@@ -22,7 +22,7 @@ public class EstudianteController {
     public List<EstudianteDTO> getEstudiantes(){
         return estudianteService.findAllEstudiantes();
     }
-    @PostMapping("/agregar/{estudiante}")
+    @PostMapping("/agregar")
     public void agregarEstudiante(@RequestBody Estudiante estudiante){
         estudianteService.addEstudiante(estudiante);
     }

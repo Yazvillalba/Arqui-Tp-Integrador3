@@ -13,7 +13,7 @@ import java.util.List;
 
 @Repository("CarreraRepository")
 public interface CarreraRepository extends JpaRepository<Carrera, Integer> {
-    @Query(value = "SELECT NEW com.arqintegrador3.integrador3.DTO.CarreraDTO(c.nombre,c.duracion) FROM Carrera c" )
+    @Query(value = "SELECT NEW com.arqintegrador3.integrador3.DTO.CarreraDTO(c.idCarrera, c.nombre,c.duracion) FROM Carrera c" )
     List<CarreraDTO> findAllCarreras();
 
 
