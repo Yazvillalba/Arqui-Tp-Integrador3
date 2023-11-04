@@ -42,7 +42,7 @@ public class CSVLoader {
     }
 
     public void loadEstudiantes(String filePath) throws IOException {
-        CSVParser parser = this.getParser("C:\\Users\\yaz\\Desktop\\Arqui-Tp-Integrador3\\src\\main\\java\\com\\arqintegrador3\\integrador3\\Resources\\estudiantes.csv");
+        CSVParser parser = this.getParser("src\\main\\java\\com\\arqintegrador3\\integrador3\\Resources\\estudiantes.csv");
 
         try {
             for (CSVRecord row : parser) {
@@ -62,7 +62,7 @@ public class CSVLoader {
     }
 
     public void loadCarrera(String filePath) throws IOException {
-        CSVParser parser = this.getParser("C:\\Users\\yaz\\Desktop\\Arqui-Tp-Integrador3\\src\\main\\java\\com\\arqintegrador3\\integrador3\\Resources\\carreras.csv");
+        CSVParser parser = this.getParser("src\\main\\java\\com\\arqintegrador3\\integrador3\\Resources\\carreras.csv");
         try {
             for (CSVRecord row : parser) {
                 Carrera carrera = new Carrera(row.get("carrera"), Integer.parseInt(row.get("duracion")));
@@ -74,7 +74,7 @@ public class CSVLoader {
     }
 
     public void loadEstudianteCarrera(String filePath) throws IOException {
-        CSVParser parser = this.getParser("C:\\Users\\yaz\\Desktop\\Arqui-Tp-Integrador3\\src\\main\\java\\com\\arqintegrador3\\integrador3\\Resources\\estudianteCarrera.csv");
+        CSVParser parser = this.getParser("src\\main\\java\\com\\arqintegrador3\\integrador3\\Resources\\estudianteCarrera.csv");
         try {
             for (CSVRecord row : parser) {
                 int idEstudiante = Integer.parseInt(row.get("id_estudiante"));

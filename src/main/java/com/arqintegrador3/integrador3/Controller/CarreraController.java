@@ -7,9 +7,13 @@ import com.arqintegrador3.integrador3.DTO.ReporteDTO;
 import com.arqintegrador3.integrador3.Model.Carrera;
 import com.arqintegrador3.integrador3.Services.Interfaces.CarreraService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/carreras")
@@ -29,12 +33,21 @@ public class CarreraController {
         return carreraService.findCarreraById(id);
     }
     @PostMapping("/agregar")
-    public void agregarCarrera(@RequestBody Carrera carrera){
+    public ResponseEntity<?> agregarCarrera(@RequestBody Carrera carrera){
+        Map<String, Object> response = new HashMap<>();
         carreraService.addCarrera(carrera);
+        
+        response.put("mensaje", "Carrera creada con éxito");
+        return new ResponseEntity<Map<String, Object>>(response, HttpStatus.CREATED);
     }
+
     @DeleteMapping("/eliminar/{id}")
-    public void eliminarCarrera(@PathVariable int id){
+    public ResponseEntity<?> eliminarCarrera(@PathVariable int id){
+        Map<String, Object> response = new HashMap<>();
         carreraService.deleteCarrera(id);
+
+        response.put("mensaje", "Carrera eliminada con éxito");
+        return new ResponseEntity<Map<String, Object>>(response, HttpStatus.OK);
     }
 
     @GetMapping("/porcantInscriptos")

@@ -71,3 +71,4 @@
 -[x] NO ANDA BUSCAR ESTUDIANTE POR CARRERA Y CIUDAD 
 -[ ] FALTA MATRICULA CONTROLLER Y TODO DE MATRICULA
 -[ ] Matricula all deberia tambien devolver el estudiante y la carrera
+-[ ] Solucionar paths absolutos en el csv loader
