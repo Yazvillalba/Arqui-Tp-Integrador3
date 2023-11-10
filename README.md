@@ -75,7 +75,14 @@
 
 
 # ENDPOINTS DE MATRICULA
+## Obtener todas las matriculaciones
+### "/matriculas"
+![obtenerMatriculas](imagenes/obtenerMatriculas.png)
 
+
+## Matricular Estudiante
+### "/matriculas/matricular"
+![addMatricula](imagenes/addMatricula.png)
 
 *CONSULTAS*
 
