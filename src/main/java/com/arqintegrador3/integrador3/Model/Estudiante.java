@@ -38,5 +38,7 @@ public class Estudiante {
     public Estudiante(){
 
     }
-
+    public void addCarrera(Matricula m){
+        carreras.add(m);
+    }
 }

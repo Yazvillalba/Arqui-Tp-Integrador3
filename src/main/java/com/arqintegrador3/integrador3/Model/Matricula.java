@@ -2,8 +2,12 @@ package com.arqintegrador3.integrador3.Model;
 
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
+@Getter
+@Setter
 public class Matricula {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -34,4 +38,10 @@ public class Matricula {
     public Matricula(){}
 
 
+    public Matricula(Estudiante estudiante, Carrera carrera, int anioInscripcion, int graduacion) {
+        this.estudiante = estudiante;
+        this.carrera = carrera;
+        this.anioInscripcion = anioInscripcion;
+        this.graduacion = graduacion;
+    }
 }

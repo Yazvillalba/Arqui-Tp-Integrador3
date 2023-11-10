@@ -27,4 +27,8 @@ public class Carrera {
     }
 
     public Carrera(){}
+
+    public void addEstudiante(Matricula m){
+        estudiantes.add(m);
+    }
 }
