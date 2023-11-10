@@ -1,9 +1,8 @@
 package com.arqintegrador3.integrador3.Model;
-
-
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+
 
 @Entity
 @Getter

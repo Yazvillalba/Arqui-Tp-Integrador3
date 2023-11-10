@@ -1,9 +1,5 @@
 package com.arqintegrador3.integrador3.Controller;
-
-
-
 import com.arqintegrador3.integrador3.DTO.EstudianteDTO;
-import com.arqintegrador3.integrador3.Model.Carrera;
 import com.arqintegrador3.integrador3.Model.Estudiante;
 import com.arqintegrador3.integrador3.Services.Interfaces.EstudianteService;
 import org.springframework.beans.factory.annotation.Autowired;

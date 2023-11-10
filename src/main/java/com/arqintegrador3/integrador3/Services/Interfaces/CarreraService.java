@@ -1,10 +1,8 @@
 package com.arqintegrador3.integrador3.Services.Interfaces;
-
 import com.arqintegrador3.integrador3.DTO.CarreraConInscriptosDTO;
 import com.arqintegrador3.integrador3.DTO.CarreraDTO;
 import com.arqintegrador3.integrador3.DTO.ReporteDTO;
 import com.arqintegrador3.integrador3.Model.Carrera;
-
 
 import java.util.List;
 

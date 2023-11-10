@@ -1,11 +1,7 @@
 package com.arqintegrador3.integrador3.Services;
-
-
-import com.arqintegrador3.integrador3.DTO.CarreraDTO;
 import com.arqintegrador3.integrador3.DTO.EstudianteDTO;
 import com.arqintegrador3.integrador3.Model.Estudiante;
 import com.arqintegrador3.integrador3.Repositories.EstudianteRepository;
-import com.arqintegrador3.integrador3.Services.Interfaces.CarreraService;
 import com.arqintegrador3.integrador3.Services.Interfaces.EstudianteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

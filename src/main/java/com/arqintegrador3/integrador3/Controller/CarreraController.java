@@ -1,6 +1,4 @@
 package com.arqintegrador3.integrador3.Controller;
-
-
 import com.arqintegrador3.integrador3.DTO.CarreraConInscriptosDTO;
 import com.arqintegrador3.integrador3.DTO.CarreraDTO;
 import com.arqintegrador3.integrador3.DTO.ReporteDTO;

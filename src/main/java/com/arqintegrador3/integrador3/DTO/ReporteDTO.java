@@ -1,9 +1,6 @@
 package com.arqintegrador3.integrador3.DTO;
-
-
 import lombok.Getter;
 import lombok.Setter;
-
 import java.io.Serializable;
 
 @Getter
