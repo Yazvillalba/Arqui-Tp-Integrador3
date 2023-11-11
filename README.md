@@ -15,12 +15,12 @@
 
 
 ## Agregar Carrera
-### "/carreras/agregar/carrera"
+### "/carreras/agregar/{carrera}"
 
 ![agregarCarrera.png](imagenes/agregarCarrera.png)
 
 ## Eliminar Carrera
-### "/carreras/delete/id"
+### "/carreras/eliminar/id"
 
 ![eliminarCarrera.png](imagenes/eliminarCarrera.png)
 
@@ -44,27 +44,27 @@
 
 
 ## Agregar Estudiante
-### "/estudiantes/agregar/Estudiante"
+### "/estudiantes/agregar/{Estudiante}"
 
 ![agregarEstudiante.png](imagenes/agregarEstudiante.png)
 
 ## Obtener estudiante por Id (dni)
-### "/estudiantes/id"
+### "/estudiantes/{id}"
 
 ![obtenerEstudiantexId.png](imagenes/obtenerEstudiantexId.png)
 
 
 ## Obtener estudiante por nro de libreta
-## "estudiantes/nroLibreta/nroLibreta"
+## "estudiantes/nroLibreta/{nroLibreta}"
 ![EstudiantePornroLibreta.png](imagenes/EstudiantePornroLibreta.png)
 
 ## Obtener estudiantes por Genero
-### "/estudiantes/genero/genero"
+### "/estudiantes/genero/{genero}"
 ![estudianteGenero.png](imagenes/estudianteGenero.png)
 
 
 ## Obtener estudiantes por carrera y ciudad 
-### "/estudiantes/carreraycuidad/TUDAI/Rauch"
+### "/estudiantes/carreraycuidad/{TUDAI}/{Rauch}"
 ![estudiantexCarreraYCiudad.png](imagenes/estudiantexCarreraYCiudad.png)
 
 
@@ -84,9 +84,3 @@
 ### "/matriculas/matricular"
 ![addMatricula](imagenes/addMatricula.png)
 
-*CONSULTAS*
-
--[ ] FALTA CRUD MATRICULA 
-
--[x] CAMBIAR NOMBRE DE IMAGENES 
-- [ ] FALTAN DIAGRAMAS
